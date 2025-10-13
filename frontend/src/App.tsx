@@ -1,17 +1,16 @@
-import { SignedIn, SignInButton, UserButton } from '@clerk/clerk-react'
-
-
+import LandingPage from './Pages/LandingPage'
+import { Route, Routes } from 'react-router-dom'
+import NotFound from './Pages/NotFound'
+import Navbar from './Components/Common/Navbar'
 const App = () => {
   return (
-    <div>
-      <SignInButton />
+    <div className='bg-[#0D0F16] min-h-screen text-white w-full font-mono'>
+      <Navbar />
 
-      <SignedIn>
-        <UserButton />
-        <p>Welcome to NodePad!</p>
-        <p>This is a simple note-taking app.</p>
-        <p>You are signed in!</p>
-      </SignedIn>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   )
 }
