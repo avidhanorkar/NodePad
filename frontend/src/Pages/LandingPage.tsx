@@ -12,7 +12,7 @@ const LandingPage = () => {
                         <Hero />
                     </div>
                     <div className="w-2/5 flex justify-center">
-                        <Code />
+                        <Code />    
                     </div>
                 </div>
                 <div className='flex flex-row gap-10'>

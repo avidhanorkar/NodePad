@@ -18,13 +18,15 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-row items-center gap-8'>
-                <Button className='font-bold text-lg cursor-pointer bg-linear-to-r from-cyan-500 to-[#135BEB] shadow-none hover:shadow-md hover:scale-101 shadow-[#135beb] rounded-md text-white px-10 py-2'>
+                <Button className='font-bold text-lg cursor-pointer bg-linear-to-r from-cyan-500 to-[#135BEB] shadow-none hover:shadow-md hover:scale-101 shadow-[#135beb] rounded-md text-white px-16 py-6'>
                     Get Started
                 </Button>
                 <Link to={`https://github.com/avidhanorkar/NodePad`}>
-                    <Button className='font-bold text-lg cursor-pointer border border-gray-500 rounded-md text-white px-10 py-2 shadow-none hover:shadow-md hover:scale-101 shadow-[#135beb]'>
-                        <Github />
-                        Source Code
+                    <Button className='font-bold text-lg cursor-pointer border border-gray-500 rounded-md text-white px-16 py-6 shadow-none hover:shadow-md hover:scale-101 shadow-[#135beb]'>
+
+                        <div className='flex gap-2 items-center '><Github />
+                            Source Code
+                        </div>
                     </Button>
                 </Link>
             </div>

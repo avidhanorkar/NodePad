@@ -10,8 +10,12 @@ const CTA = () => {
             </div>
 
             <div className="flex gap-8">
-                <Button className="bg-linear-to-r from-cyan-500 to-[#135BEB] border-1 border-[#4B5563] hover:bg-inherit hover:scale-101 hover:shadow-[#010101] shadow-nonoe hover:shadow-lg duration-300 transition-all text-lg font-semibold"><Rocket stroke="white" />Start Building Now</Button>
-                <Button className="bg-inherit border-1 border-[#4B5563] hover:bg-inherit hover:scale-101 hover:shadow-[#010101] shadow-nonoe hover:shadow-lg duration-300 transition-all text-lg"><Book strokeWidth={3}/>View Documentation</Button>
+                <Button className="px-16 py-6 bg-linear-to-r from-cyan-500 to-[#135BEB] border-1 border-[#4B5563] hover:bg-inherit hover:scale-101 hover:shadow-[#010101] shadow-nonoe hover:shadow-lg duration-300 transition-all text-lg font-semibold">
+                    <div className="flex gap-2 items-center"><Rocket stroke="white" />Start Building Now</div>
+                </Button>
+                <Button className="px-16 py-6 bg-inherit border-1 border-[#4B5563] hover:bg-inherit hover:scale-101 hover:shadow-[#010101] shadow-nonoe hover:shadow-lg duration-300 transition-all text-lg">
+                    <div className="flex gap-2 items-center"><Book strokeWidth={3} />View Documentation</div>
+                    </Button>
             </div>
         </div>
     )

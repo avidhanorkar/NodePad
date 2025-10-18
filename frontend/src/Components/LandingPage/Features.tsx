@@ -1,5 +1,5 @@
 import Card from "./Card"
-import { Github, Code, Users, Play, Bot } from "lucide-react";
+import { Github, Code, Users, Play, Bot, GithubIcon } from "lucide-react";
 const Features = () => {
 
 const featureData = [
@@ -27,6 +27,11 @@ const featureData = [
     svg: <Play color="white" size={32} />,
     title: "Instant Code Execution",
     desc: "Run your code directly in the browser without any setup."
+  },
+  {
+    svg: <GithubIcon color="white" size={32} />,
+    title: "Seamless GitHub Integration",
+    desc: "Easily push and pull code to and from your GitHub repositories."
   }
 ];
 
